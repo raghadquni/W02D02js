@@ -34,13 +34,11 @@ const addQuestion = (arr) => {
 
 const forLoopTwoToThe = (arr) => {
   
-  const arr2 = arr.map(function(element, i ) {
-      i = 2;
-      let powe = Math.pow(element, i);
-      return powe
+  const arr2 = arr.map(function(element ) {
+      return Math.pow( 2 , element);
   });
       return arr2;
-}; // don't start from arr[0].!!!
+}; // DONE
 
 
 const typeNum = (arr) => {
@@ -74,8 +72,51 @@ const oddValues = (arr) => {
 
 
 const addValues = (arr) => {
-    arr.reduce()
-};
+    const arr2 = arr.reduce(function(element, acc){
+        element += acc;
+        return element;
+
+    });
+
+    return arr2
+}; // DONE
+
+
+const countNumberOfElements = (arr) => {
+    const arr2 = arr.reduce(function(acc ,element, index) {
+        acc = ++index;
+        return acc;
+
+    });
+
+    return arr2;
+
+}; // DONE
+
+
+const items  = [{
+    item: 'switch',
+    purchasePrice: 399},
+    {
+    item: 'nike',
+    purchasePrice: 150
+    }]
+
+
+    // Extra
+  
+  const sortNumbers = (arr) => {
+    let sortednumbers = arr.sort((s, c) => s - c);
+    return sortednumbers;
+  }; // DONE EXTRA 2
+
+
+  const sortBackwards = (arr) => {
+    let sortednumbers = arr.sort((s, c) => c - s);
+    return sortednumbers;
+  }; // done extra 3
+  
+
 
 
 
